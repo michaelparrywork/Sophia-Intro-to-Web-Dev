@@ -4,51 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="media/Bakery_c/bakery-logo_c.png" alt="North Star Bakery Logo"
-            width="640"
-            height="360">>
-        <nav aria-label="Main">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <img src="media/Bakery_c/bakery-logo_c.png" alt="North Star Bakery Logo" class="logo" width="640" height="360">
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-<main>
-    <h1>Welcome to our online store!</h1>
+    <main>
+        <section class="hero">
+            <h1>Welcome to North Star Bakery</h1>
+            <p>Warm, handmade breads and artisan pastries baked fresh every morning for our neighborhood.</p>
+            <a href="contact.html" class="btn">Place a Preorder</a>
+        </section>
 
-    <section>
-        <h2>What We're Known For</h2>
-        <p>Fancy artisan pastries made fresh!</p>
-        <img src="media/Bakery_c/bakery-storefront_c.png" alt="Bakery storefront entrance"
-            width="640"
-            height="360">
-    </section>
+        <div class="card-grid">
+            <section class="card">
+                <h2>What We're Known For</h2>
+                <p>Fancy artisan pastries, crusty sourdough loaves, and scratch-made seasonal treats.</p>
+                <img src="media/Bakery_c/bakery-storefront_c.png" alt="Bakery storefront entrance" width="640" height="360">
+            </section>
 
-    <section>
-        <h2>Hours & Location</h2>
-        <p>Hours: 6:00 AM - 5:00 PM</p>
-        <p>Location: 123 Bakery Street</p>
-    </section>
+            <section class="card">
+                <h2>Featured Item of the Week</h2>
+                <p>The new fancy cookie — crisp golden edges with a soft, rich center.</p>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="media/Bakery_c/bakery-feature-large_c.png">
+                    <img src="media/Bakery_c/bakery-feature-small_c.png" alt="A fancy looking cookie" width="640" height="360">
+                </picture>
+            </section>
+        </div>
 
-    <section>
-        <h2>Featured Item of the Week:</h2>
-        <p>The new fancy cookie</p>
-        <img src="media/Bakery_c/bakery-feature-small_c.png" alt="A fancy looking cookie"
-            width="640"
-            height="360">
-    </section>
-</main>
+        <section class="info-banner">
+            <h2>Hours &amp; Location</h2>
+            <p><strong>Hours:</strong> Daily, 6:00 AM – 5:00 PM</p>
+            <p><strong>Location:</strong> 123 Bakery Street</p>
+        </section>
+    </main>
 
-<footer>
-    <p>2026 North Star Bakery. 111-111-1111 All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 North Star Bakery &bull; 111-111-1111 &bull; All rights reserved.</p>
+    </footer>
 </body>
 </html>

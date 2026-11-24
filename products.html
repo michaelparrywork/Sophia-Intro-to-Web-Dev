@@ -4,92 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="media/Bakery_c/bakery-logo_c.png" alt="North Star Bakery Logo"
-            width="640"
-            height="360">
-        <nav aria-label="Main">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <img src="media/Bakery_c/bakery-logo_c.png" alt="North Star Bakery Logo" class="logo" width="640" height="360">
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" aria-current="page">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-<main>
-    <h1>North Star Bakery Products</h1>
+    <main>
+        <h1>North Star Bakery Products</h1>
 
-    <section>
-        <h2>Product Categories</h2>
-        <ul>
-            <li>Cookies</li>
-            <li>Cakes</li>
-            <li>Pastries</li>
-            <li>Breakfast</li>
-            <li>Signature Artisan Bread</li>
-            <li>Standard Bread</li>
-        </ul>
-    </section>
+        <section class="category-bar">
+            <h2>Product Categories</h2>
+            <ul class="pill-list">
+                <li>Cookies</li>
+                <li>Cakes</li>
+                <li>Pastries</li>
+                <li>Breakfast</li>
+                <li>Signature Artisan Bread</li>
+                <li>Standard Bread</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Cookies:</h2>
-        <p>Description: Fresh, handmade cookies from scratch.</p>
-        <p>Contact the store to order for events!</p>
-        <p>Pricing: $12/dozen</p>
-    </section>
+        <section class="featured-loaf">
+            <figure>
+                <h2>Signature Artisan Bread</h2>
+                <img src="media/Bakery_c/bakery-signature-loaf_c.png" alt="Specially crafted homemade artisan bread." width="640" height="360">
+                <figcaption>Handcrafted artisan bread forged with years of experience. <strong>$10 special now!</strong></figcaption>
+            </figure>
+        </section>
 
-    <section>
-        <h2>Cakes</h2>
-        <p>Description: Fancy cakes for events and bargain cakes for small occasions.</p>
-        <p>Contact the store to preorder for events like weddings!</p>
-        <p>Pricing: $10-$100</p>
-    </section>
+        <div class="card-grid">
+            <section class="card">
+                <h2>Cookies</h2>
+                <p>Fresh, handmade cookies baked from scratch. Contact the store to order for events!</p>
+                <p class="price">$12 / dozen</p>
+            </section>
 
-    <section>
-        <h2>Pastries</h2>
-        <p>Description: Handmade pastries based on the season</p>
-        <p>Pricing: $2</p>
-    </section>
+            <section class="card">
+                <h2>Cakes</h2>
+                <p>Fancy cakes for events and bargain cakes for small occasions. Contact us to preorder for weddings and parties!</p>
+                <p class="price">$10 – $100</p>
+            </section>
 
-    <section>
-        <h2>Breakfast</h2>
-        <p>Description: Beautifully crafted breakfast options for an easy start to your day.</p>
-        <p>Pricing: $5</p>
-    </section>
+            <section class="card">
+                <h2>Pastries</h2>
+                <p>Handmade flaky pastries crafted with seasonal local ingredients.</p>
+                <p class="price">$2 each</p>
+            </section>
 
-    <section>
-        <figure>
-            <h2>Signature Artisan Bread</h2>
-            <picture>
-                <source media="(min-width: 768px)" srcset="media/Bakery_c/bakery-signature-loaf_c.png">
-                <img src="media/Bakery_c/bakery-feature-small_c.png"
-                    alt="Specially crafted homemade artisan bread."
-                    width="640"
-                    height="360">
-            </picture>
-            <figcaption>Hand crafted artisan bread forged with years of experience. $10 special now!
-            </figcaption>
-        </figure>
-    </section>
+            <section class="card">
+                <h2>Breakfast</h2>
+                <p>Beautifully crafted breakfast options for an easy, warm start to your morning commute.</p>
+                <p class="price">$5 each</p>
+            </section>
 
-    <section>
-        <h2>Standard Bread</h2>
-        <p>Description: Our standard is so high even our most basic bread looks like this!</p>
-        <p>Pricing: $5</p>
-            <img src="media/Bakery_c/bakery-bread_c.png" alt="Handmade bread that just came out of a warm cozy kitchen."
-                width="640"
-                height="360">
-    </section>
-    
-</main>
+            <section class="card">
+                <h2>Standard Bread</h2>
+                <p>Our standard is so high even our everyday loaf looks and tastes like this!</p>
+                <p class="price">$5 / loaf</p>
+                <img src="media/Bakery_c/bakery-bread_c.png" alt="Handmade bread that just came out of a warm cozy kitchen." width="640" height="360">
+            </section>
+        </div>
+    </main>
 
-<footer>
-    <p>2026 North Star Bakery. 111-111-1111 All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 North Star Bakery &bull; 111-111-1111 &bull; All rights reserved.</p>
+    </footer>
 </body>
 </html>

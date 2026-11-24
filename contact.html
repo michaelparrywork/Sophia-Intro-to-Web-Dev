@@ -4,89 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="media/Bakery_c/bakery-logo_c.png" alt="North Star Bakery Logo"
-            width="640"
-            height="360">
-        <nav aria-label="Main">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <img src="media/Bakery_c/bakery-logo_c.png" alt="North Star Bakery Logo" class="logo" width="640" height="360">
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-<main>
-    <h1>Contact Us</h1>
+    <main>
+        <h1>Contact &amp; Preorders</h1>
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Your Contact Information</legend>
-            <p>
-                <label for="contactName">Name:</label><br>
-                <input type="text" id="contactName" name="contactName" required>
-            </p>
-            <p>
-                <label for="contactEmail">Email:</label><br>
-                <input type="email" id="contactEmail" name="contactEmail" required>
-            </p>
-            <p>
-                <label for="contactPhone">Phone (optional):</label><br>
-                <input type="tel" id="contactPhone" name="contactPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="111-111-1111">
-            </p>
-        </fieldset>
+        <div class="contact-layout">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <p>
+                        <label for="contactName">Name:</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </p>
+                    <p>
+                        <label for="contactEmail">Email:</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </p>
+                    <p>
+                        <label for="contactPhone">Phone (optional):</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="111-111-1111">
+                    </p>
+                </fieldset>
 
-        <fieldset>
-            <legend>Preorder or Inquiry Details</legend>
-            <p>
-                <label for="requestType">Preorder or General Inquiry?:</label><br>
-                <select id="requestType" name="requestType" required>
-                    <option value="preorder">Preorder</option>
-                    <option value="generalInquiry">General Inquiry</option>
-                </select>
-            </p>
-            <p>
-                <label for="pickupDate">Pickup Date:</label><br>
-                <select id="pickupDate" name="pickupDate">
-                    <option value="today">Today</option>
-                    <option value="tomorrow">Tomorrow</option>
-                    <option value="futureDate">Future Date</option>
-                </select>
-            </p>
-            <p>
-                <label for="itemDetails">What item are you inquiring about?:</label><br>
-                <select id="itemDetails" name="itemDetails">
-                    <option value="cookies">Cookies</option>
-                    <option value="cakes">Cakes</option>
-                    <option value="pastries">Pastries</option>
-                    <option value="breakfast">Breakfast</option>
-                    <option value="bread">Signature Artisan Bread</option>
-                </select>
-            </p>
-            <p>
-                <label for="allergy">Please list any allergies:</label><br>
-                <input type="text" id="allergy" name="allergy" placeholder="None">
-            </p>
-            <p>
-                <button type="submit">Submit</button>
-            </p>
-        </fieldset>
-    </form>
+                <fieldset>
+                    <legend>Preorder or Inquiry Details</legend>
+                    <p>
+                        <label for="requestType">Preorder or General Inquiry?</label>
+                        <select id="requestType" name="requestType" required>
+                            <option value="preorder">Preorder</option>
+                            <option value="generalInquiry">General Inquiry</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="pickupDate">Pickup Date:</label>
+                        <select id="pickupDate" name="pickupDate">
+                            <option value="today">Today</option>
+                            <option value="tomorrow">Tomorrow</option>
+                            <option value="futureDate">Future Date</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="itemDetails">What item are you inquiring about?</label>
+                        <select id="itemDetails" name="itemDetails">
+                            <option value="cookies">Cookies</option>
+                            <option value="cakes">Cakes</option>
+                            <option value="pastries">Pastries</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="bread">Signature Artisan Bread</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="allergy">Please list any allergies:</label>
+                        <input type="text" id="allergy" name="allergy" placeholder="None">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn">Submit Request</button>
+                    </p>
+                </fieldset>
+            </form>
 
-    <section>
-        <h2>Hours & Location</h2>
-        <p>Hours: 6:00 AM - 5:00 PM</p>
-        <p>Location: 123 Bakery Street</p>
-    </section>
-</main>
+            <section class="card contact-info">
+                <h2>Hours &amp; Location</h2>
+                <p><strong>Hours:</strong> Daily, 6:00 AM – 5:00 PM</p>
+                <p><strong>Location:</strong> 123 Bakery Street</p>
+                <p><strong>Phone:</strong> 111-111-1111</p>
+                <p>Need custom event catering or wedding cake sizing? Select <em>General Inquiry</em> in the form and tell us about your event.</p>
+            </section>
+        </div>
+    </main>
 
-<footer>
-    <p>2026 North Star Bakery. 111-111-1111 All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 North Star Bakery &bull; 111-111-1111 &bull; All rights reserved.</p>
+    </footer>
 </body>
 </html>

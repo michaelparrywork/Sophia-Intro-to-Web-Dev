@@ -1,13 +1,12 @@
 /* Stylesheet */
 :root {
-    --off-white: #f8efe4;
     --dark-brown: #3d2313;
     --dark-orange: #bb5e16;
     --dark-red-brown: #994a12;
     --tan: #e2d3c2;
     --font: "Lato", "Arial", sans-serif;
 }
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -25,7 +24,7 @@ video {
 
 /* Main */
 body {
-    background-color: var(--off-white);
+    background-color: white;
     color: var(--dark-brown);
     font-family: var(--font);
     line-height: 2;
@@ -35,12 +34,12 @@ body {
 }
 header{
     background-color: var(--dark-brown);
-    color: var(--off-white);
+    color: white;
     padding: 1.5rem;
 }
 footer {
     background-color: var(--dark-brown);
-    color: var(--off-white);
+    color: white;
     padding: 1.5rem;
 }
 
@@ -61,7 +60,7 @@ nav ul, .tags {
     gap: .5rem;
 }
 nav a {
-    color: var(--off-white);
+    color: white;
     text-decoration: none;
     font-weight: 600;
     padding: .5rem;
